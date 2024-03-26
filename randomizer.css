@@ -1,0 +1,399 @@
+
+/*randomizer*/
+:root{
+    --circle-size : 50px;
+    --apex-red: rgb(165, 33, 33);
+}
+#main-container{
+    background-color: rgb(243, 243, 243);
+    
+    border-radius: 1%;
+    border: solid black 2px;
+    width: 80%;
+    height: 85%;
+    
+    
+    position: absolute;
+    left:50%;
+    top:50%;
+    
+    margin-top: 3%;
+    transform:translate(-50%,-50%); 
+    min-height: 600px;
+    
+}
+/*btn*/
+
+#btn{
+    font-family: 'Apex', sans-serif;
+    font-size:3vmin;
+    text-align: center;
+    top:3%;
+    left:50%;
+    position:absolute;
+    transform: translateX(-50%);
+    z-index:1;
+    width:20vmin;
+    height:10vmin;
+    border-radius: 5%;
+}
+/*legend containers*/
+.legend-container{
+    position: absolute;
+    transform:translate(-50%,-50%); 
+    width:40%;
+    height: 100%;
+    left:20%;
+    top:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;;
+}
+.legend{
+    
+    top:5%;
+    
+    position:absolute;
+    font-size: 6vmin;
+}
+
+#img-legend{
+    scale: 80%;
+    margin-top:10%;
+    position: relative;
+}
+#mysteryLegend{
+    top:88%;
+    position:absolute;
+    font-size: 4vmin;
+    color:var(--apex-red);
+}
+/*weapon1 container*/
+.weapon1-content-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;;
+    position: absolute;
+    transform:translate(-50%,-50%); 
+    width:40%;
+    height: 30%;
+    top:40%;
+    left:80%;
+    flex-direction: column;
+
+}
+.weapon{
+    font-size: 6vmin;
+    white-space: nowrap;
+    position:absolute;
+    transform:translate(-50%,-50%); 
+    top:10%;
+    left:80%;
+}
+#weapon2Header{
+    top:55%;
+}
+#mysteryWeapon1{
+    text-align: center;
+    font-size: 4vmin;
+    color:var(--apex-red);
+    white-space: nowrap;
+    z-index: 1;
+
+}
+#weapon1-container{
+    
+    width: 45%;
+    height:15%;
+    
+   
+}
+/*weapon 2 container*/
+.weapon2-content-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;;
+    position: absolute;
+    transform:translate(-50%,-50%); 
+    width:40%;
+    height: 30%;
+    top:85%;
+    left:80%;
+    flex-direction: column;
+
+}
+#weapon-img-container{
+    
+    width: 80%;
+    height:50%;
+    
+    
+}
+.img-weapon{
+    object-fit: contain;
+    width: 100%;
+    height:100%;
+}
+
+
+#mysteryWeapon2{
+    
+    font-size: 4vmin;
+    text-align: center;
+    color:var(--apex-red);
+    white-space: nowrap;
+}
+
+
+
+
+
+/* images */
+
+#ammo1{
+    left:50%;
+    top: 28%;
+    transform:translate(-50%,-50%);  
+    position: absolute;
+}
+#ammo2{
+    left:50%;
+    top: 78%;
+    transform:translate(-50%,-50%);  
+    position: absolute;
+}
+#legend_class{
+    left:50%;
+    top: 53%;
+
+    transform:translate(-50%,-50%);  
+    position: absolute;
+}
+/* containers for guns */
+
+/* reroll */
+.reroll{
+    
+    margin-left: 5%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    transform:translate(-50%,-50%); 
+    position: absolute; 
+    border-radius: 50%; 
+}
+
+.reroll-legend{
+    left:30%;
+    top:15%;
+    transform:translate(-50%,-50%); 
+    position:absolute;
+    margin-left: 0;
+}
+.reroll-weapon1{
+    left:90%;
+    top:15%;
+    
+   
+}
+.reroll-weapon2{
+    left:90%;
+    top:61%;
+    
+    
+}
+.reroll-img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*options*/
+.option-button{
+    
+    width: var(--circle-size);
+    height: var(--circle-size);
+    transform:translate(-50%,-50%); 
+    position: absolute; 
+    border-radius: 50%; 
+    right:0;
+    top:5%;
+}
+.option-img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+.options-container{
+    
+    z-index: 10;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    
+}
+.exitButton{
+    position: absolute;
+    top:0;
+    right:0;
+    margin-right:3%;
+}
+.optionbox{
+    background-color: rgb(243, 243, 243);
+    opacity: 200%;
+    border-radius: 1%;
+    border: solid black 2px;
+    width: 80%;
+    height: 85%;
+    
+    
+    position: absolute;
+    left:50%;
+    top:50%;
+    
+    margin-top: 3%;
+    transform:translate(-50%,-50%); 
+    min-height: 600px;
+}
+.optionbox h2{
+    margin-left:2%;
+    font-size: 2rem;
+}
+.option{
+    display: flex;
+    margin-left:5%;
+    font-size: 2rem;
+}
+.option input{
+    scale:120%;
+}
+
+/*resposive*/
+@media (875px < width < 1330px) {
+
+    .legend-container{
+        left:25%;
+    }
+    .legend-img-container{
+        scale:90%;
+    }
+    .legend{
+        margin-bottom:10%;
+    }
+    .weapon{
+        left:78%;
+        top:10%;
+
+    }
+    #weapon-img-container{
+        height:50%;
+    }
+    .weapon1-content-container{
+        left:78%;
+        top:42%;
+        height:20%;
+        z-index:3;
+    }
+    
+    .weapon2-content-container{
+        left:78%;
+        top:92%;
+        height:20%;
+        z-index:3;
+    }
+    #weapon2Header{
+        left:78%;
+        top:60%;
+    }
+   
+    
+    #ammo1{
+        left:78%;
+        top:35%;
+    }
+    #ammo2{
+        left:78%;
+        top:85%
+    }
+    
+    #legend_class{
+        display: none;;
+    }
+    .reroll{
+        margin: 0;
+
+    }
+    .reroll-legend{
+        top:7%;
+        left:25%;
+    }
+    .reroll-weapon1{
+        left:78%;
+        top: 7%;
+    }
+    .reroll-weapon2{
+        left:78%;
+        top: 57%;
+    }
+}
+@media (875px >= width ){
+    #main-container{
+        margin-top: 10%;
+    }
+    .legend-container{
+        left:50%;
+        top:30%;
+        height:50%;
+       
+    }
+    .legend{
+        display: none;
+    }
+    .legend-img-container{
+        min-width: 650x;
+    }
+    #img-legend{
+        scale:45%;
+    }
+    #mysteryLegend{
+        margin-top: 30%;
+    }
+    #ammo1{
+        display: none;;
+    }
+    #ammo2{
+        display: none;;
+    }
+    
+    #legend_class{
+        display: none;;
+    }
+    .weapon1-content-container{
+        left:25%;
+        top:80%;
+    }
+    .weapon2-content-container{
+        left:75%;
+        top:80%;
+    }
+    .weapon{
+        display: none;
+    }
+    
+    .reroll-legend{
+        top:15%;
+        left:50%;
+    }
+    .reroll-weapon1{
+        left:20%;
+        top: 58%;
+        transform: translateX(-50%);
+    }
+    .reroll-weapon2{
+        left:70%;
+        top: 58%;
+        transform: translateX(-50%);
+    }
+    
+}

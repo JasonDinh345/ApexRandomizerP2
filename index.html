@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="randomizer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title> Randomizer | Apex Randomizer </title> 
+    
+</head>
+<body>
+    
+    <div id="topbar">
+        <div class="item-left">
+            <h1 class="title topbar-item "> Apex Randomizer </h1>
+        </div>
+        <div class="item-right">
+            <nav class="top-list">
+                
+                
+                
+                <a href="https://github.com/JasonDinh345"class="list-item">GITHUB</a>
+            </nav>
+        </div>
+    </div>
+
+    <div id="main-container">
+        <button class="option-button"> <img src="gear.png" class="option-img"></button>
+        <button id="btn"> Generate Loadout </button>
+        <div class="legend-container">
+            <h2 class="legend" id="legendHeader"> Legend </h2>
+            <div class="legend-img-container">
+                <img id="img-legend" src="legends/mysterylegend.png">
+            </div>
+            <p id="mysteryLegend">???</p>
+        </div>
+        <h2 class="weapon" id="weapon1Header"> Weapon 1 </h2>
+        <div class="weapon1-content-container">
+            <div id="weapon-img-container">
+                <img id="img-weapon1" class="img-weapon" src="guns/question.png">
+            </div>
+            <p id="mysteryWeapon1" >???</p>
+        </div>
+        <h2 class="weapon" id="weapon2Header"> Weapon 2 </h2>
+        <div class="weapon2-content-container">
+            
+            <div id="weapon-img-container">
+                <img id="img-weapon2" class="img-weapon" src="guns/question.png">
+            </div>
+            <p id="mysteryWeapon2">???</p>
+        </div>
+
+        <button class="reroll reroll-legend"> <img src="reroll.png" class="reroll-img"></button>
+        <button class="reroll reroll-weapon1"><img src="reroll.png" class="reroll-img"></button>
+        <button class="reroll reroll-weapon2"><img src="reroll.png" class="reroll-img"></button>
+        
+
+        <img id="ammo1" src="">
+
+        <img id="ammo2" src="">
+
+        <img id="legend_class" src="">
+
+    </div>
+    
+    <div class="options-container">
+        <div class="optionbox">
+            <h2> Options</h2>
+                <H2 class="exitButton"> X</H2>
+                <div class="option">
+                    <input type="checkbox" class="includeCarePackage">
+                    <p>Include Care Package Weapons</p>
+                </div>
+                <div class="option">
+                    <input type="checkbox" class="removeDupe">
+                    <p>Prevent Duplicate Weapons</p>
+                </div>
+                <div class="option">
+                    <input type="checkbox" class="removeSameAmmo">
+                    <p>Prevent Same Ammo Type</p>
+                </div>
+                <div class="option">
+                    <input type="checkbox" class="removeRepeatGuns">
+                    <p>Prevent Repeat Guns</p>
+                </div>
+                <div class="option">
+                    <input type="checkbox" class="removeRepeatLegend">
+                    <p>Prevent Repeat Legends</p>
+                </div>
+        </div>
+    </div>
+    <div class="map-container">
+        <div class="map-img container">
+
+        </div>
+
+
+    </div>
+    <div class="bottombar">
+
+    </div>
+
+    <script src="randomizer.js"></script>
+</body>
+
+</html>
