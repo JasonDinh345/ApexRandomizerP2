@@ -26,11 +26,11 @@ const ammoList = [
     {name:"arrow", original:null, carePackage:"ammo/Mythic_Arrows.png"}
 ]
 const classList = [
-    {name: "assult", img: "/legend_icon/assult.png"},  
-    {name: "recon", img: "/legend_icon/recon.png"}, 
-    {name: "support", img: "/legend_icon/support.png"},
-    {name: "skirmisher", img: "/legend_icon/skirmisher.png"},
-    {name: "controller", img: "/legend_icon/controller.png"}
+    {name: "assult", img: "legend_icon/assult.png"},  
+    {name: "recon", img: "legend_icon/recon.png"}, 
+    {name: "support", img: "legend_icon/support.png"},
+    {name: "skirmisher", img: "legend_icon/skirmisher.png"},
+    {name: "controller", img: "legend_icon/controller.png"}
 ]
 const weaponList = [
 {name:"Alternator SMG", type:"light", img:"guns/alternator.png", isCarePackage: false} ,{name:"R-99 SMG", type:"light", img:"guns/r99.png", isCarePackage: false},
