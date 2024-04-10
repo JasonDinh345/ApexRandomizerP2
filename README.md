@@ -13,5 +13,6 @@ https://jasondinh345.github.io/ApexRandomizerP2/<br>
 Responsiveness on the navbar isnt fully implemented <br>
 Responsiveness is off sometimes on moblie<br>
 Doesn't work with mobile landscape<br>
+Slowbr>
 
 
